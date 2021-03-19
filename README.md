@@ -28,5 +28,10 @@ After that you can run images on docker. You can change port number if you don't
 ```sh
 docker run -p 2900:3000 -it case-study
 ```
+if you want detached mode add -d parameters 
+```sh
+docker run -d -p 2900:3000 -it case-study
+```
+
 
 It's done check <br/> https://localhost:2900
