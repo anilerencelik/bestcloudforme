@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import Routes from './routes'
 
 const PORT = 3000;
 
@@ -9,7 +10,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
-
+Routes(app)
 
 app.get('/', (reg, res) => {
     res.send('Anıl Eren ÇELİK')
