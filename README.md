@@ -9,5 +9,24 @@ touch .env
 ```
 > webhook=YOUR_WEBHOOK_URLS_HERE
 
-default port is 3000 if you want to change port add this line 
-> PORT=4000
+
+
+## Building Dockerfile
+You can create docker images. In project directory
+
+```sh
+docker build -t case-study . 
+```
+
+You can check building is correctly. You must be see case-study in images
+```sh
+docker images
+```
+
+After that you can run images on docker. You can change port number if you don't want use 2900
+
+```sh
+docker run -p 2900:3000 -it case-study
+```
+
+It's done check <br/> https://localhost:2900

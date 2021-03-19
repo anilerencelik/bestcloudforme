@@ -4,8 +4,8 @@
   "description": "Rest Api for BestCloudForMe",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=src node src/index.js --exec babel-node",
-    "dev": "NODE_PATH=src nodemon src/index.js --exec babel-node"
+    "start": "node ./node_modules/babel-cli/bin/babel-node.js src/index.js",
+    "dev": "sudo NODE_PATH=src nodemon src/index.js --exec babel-node"
   },
   "author": "Anıl Eren Çelik",
   "license": "ISC",
